@@ -1,0 +1,7 @@
+.env
+java-app/.env
+java-app/target/
+java-app/data/
+/data/
+java-app/dependency-reduced-pom.xml
+*.log

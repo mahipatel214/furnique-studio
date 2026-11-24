@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ed">
+    <meta name="description" content="Your Furnique Studio account.">
+    <title>Your account — Furnique Studio</title>
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <main class="account-shell">
+      <header class="account-header"><a class="auth-brand" href="index.html">Furnique<span>Studio</span></a><button class="auth-secondary" type="button" data-sign-out>Sign out</button></header>
+      <section class="account-card">
+        <span class="auth-eyebrow">YOUR FURNIQUE ACCOUNT</span>
+        <h1>Welcome, <span id="account-name">friend</span>.</h1>
+        <p id="account-email" class="auth-intro"></p>
+        <p id="account-message" class="auth-message" role="status" aria-live="polite"></p>
+        <p class="account-note">Your sign-in is active. Shopping and payment are still a demo; customer accounts are not connected to orders yet.</p>
+        <a class="auth-submit account-shop-link" href="shop.html">Explore the collection <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+  </body>
+</html>

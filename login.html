@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ed">
+    <meta name="description" content="Sign in to your Furnique Studio account.">
+    <title>Sign in — Furnique Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <main class="auth-shell">
+      <a class="auth-brand" href="index.html">Furnique<span>Studio</span></a>
+      <section class="auth-card" aria-labelledby="page-title">
+        <div class="auth-photo" role="img" aria-label="Warm and inviting living room">
+          <a class="back-link" href="index.html">← Back to the studio</a>
+          <div><span class="auth-eyebrow">A LITTLE MORE YOU</span><p>Come back to the pieces you love.</p></div>
+        </div>
+        <div class="auth-panel">
+          <span class="auth-eyebrow">WELCOME HOME</span>
+          <h1 id="page-title">Sign in</h1>
+          <p class="auth-intro">Pick up where you left off.</p>
+          <form id="customer-login-form" class="auth-form">
+            <label for="customer-email">Email address</label>
+            <input id="customer-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+            <label for="customer-password">Password</label>
+            <input id="customer-password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required>
+            <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+            <button class="auth-submit" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="auth-switch">New to Furnique? <a href="register.html">Create an account</a></p>
+          <p class="auth-demo">Prototype account only. Purchases and payments are still demo-only.</p>
+        </div>
+      </section>
+      <a class="admin-entry" href="admin-login.html">Studio administrator sign in <span aria-hidden="true">↗</span></a>
+    </main>
+  </body>
+</html>

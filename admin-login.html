@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#34372f">
+    <meta name="description" content="Administrator sign in for the Furnique Studio workspace.">
+    <title>Administrator sign in — Furnique Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" defer></script>
+  </head>
+  <body class="admin-auth-page">
+    <main class="auth-shell">
+      <a class="auth-brand" href="index.html">Furnique<span>Studio</span></a>
+      <section class="auth-card admin-auth-card" aria-labelledby="page-title">
+        <div class="auth-photo admin-auth-photo" role="img" aria-label="Quiet, thoughtfully arranged studio interior">
+          <a class="back-link" href="index.html">← Back to storefront</a>
+          <div><span class="auth-eyebrow">PRIVATE WORKSPACE</span><p>For the people behind the studio.</p></div>
+        </div>
+        <div class="auth-panel">
+          <span class="auth-eyebrow">STUDIO ADMIN</span>
+          <h1 id="page-title">Administrator sign in</h1>
+          <p class="auth-intro">Use the administrator credentials configured on the server.</p>
+          <form id="admin-login-form" class="auth-form">
+            <label for="admin-email">Administrator email</label>
+            <input id="admin-email" name="email" type="email" autocomplete="username" maxlength="120" required>
+            <label for="admin-password">Password</label>
+            <input id="admin-password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required>
+            <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+            <button class="auth-submit" type="submit">Enter workspace <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="auth-demo">Separate from customer accounts. Access is controlled by server-side credentials.</p>
+        </div>
+      </section>
+      <a class="admin-entry" href="login.html">Customer sign in <span aria-hidden="true">↗</span></a>
+    </main>
+  </body>
+</html>

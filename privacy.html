@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ed">
+    <meta name="description" content="Privacy information for the Furnique Studio student prototype.">
+    <title>Privacy — Furnique Studio</title>
+    <link rel="stylesheet" href="auth.css">
+  </head>
+  <body>
+    <main class="account-shell">
+      <a class="auth-brand" href="index.html">Furnique<span>Studio</span></a>
+      <article class="account-card privacy-card">
+        <span class="auth-eyebrow">PLAIN-LANGUAGE NOTICE</span>
+        <h1>Privacy for this prototype</h1>
+        <p class="auth-intro">Furnique Studio is a student project, not a live retail service. Please use test details only.</p>
+        <h2>Account details</h2>
+        <p>When you register, the Java server receives your name and email address and stores them with a salted PBKDF2-HMAC-SHA256 password hash. Your password is not stored as plain text. The app creates an HttpOnly session cookie when you sign in.</p>
+        <h2>Where it is stored</h2>
+        <p>Local runs store account records in a file under the configured data directory. When configured with PostgreSQL, account records are stored in the `furnique_customers` table. This prototype does not have a self-service account deletion or password-reset feature; do not use an email address or password you rely on elsewhere.</p>
+        <h2>Orders and other demo data</h2>
+        <p>Customer accounts are not connected to checkout or order history. Demo cart and saved pieces remain in your browser. The demo order API stores test order details on the server. No real payment provider or fulfilment service is connected.</p>
+        <h2>Before a real launch</h2>
+        <p>This notice is not legal advice and does not replace a production privacy policy. A real service needs reviewed purposes and retention periods, access/deletion and recovery workflows, a security review, and current legal guidance before collecting personal information.</p>
+        <a class="auth-submit account-shop-link" href="register.html">Back to account registration <span aria-hidden="true">↗</span></a>
+      </article>
+    </main>
+  </body>
+</html>

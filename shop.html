@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ed">
+    <meta name="description" content="Shop considered furniture for living, dining, and bedroom spaces at Furnique Studio.">
+    <title>Shop the collection — Furnique Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="storefront">
+      <div class="announcement">Prototype preview <span>·</span> Sample catalog, ratings &amp; demo checkout only</div>
+      <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Furnique Studio home">Furnique<span>Studio</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="shop.html" aria-current="page">Shop</a>
+          <a href="about.html">About</a>
+          <a href="journal.html">Journal</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Account</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search-wrap" for="site-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.3 4.3"></path></svg>
+            <input id="site-search" type="search" placeholder="Find your piece" autocomplete="off" aria-label="Search furniture">
+          </label>
+          <button class="icon-button wishlist-open" type="button" aria-label="Open saved pieces"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 8.6c0 5-8.2 10.1-8.2 10.1S3.8 13.6 3.8 8.6a4.2 4.2 0 0 1 7.3-2.8l.9 1 .9-1a4.2 4.2 0 0 1 7.3 2.8Z"></path></svg><span class="icon-count" id="wishlist-count">0</span></button>
+          <button class="icon-button cart-open" type="button" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="icon-count" id="cart-count">0</span></button>
+          <button class="mobile-menu icon-button" type="button" aria-label="Open menu" aria-expanded="false"><span class="menu-lines"></span></button>
+        </div>
+      </header>
+      <main>
+        <section class="shop-page-intro">
+          <span class="eyebrow">A PLACE FOR EVERY PIECE</span>
+          <h1>Find your <em>forever piece.</em></h1>
+          <p>One considered collection for the living room, dining room, and the softer edges of bedtime.</p>
+        </section>
+        <section class="section shop-section" id="shop" aria-labelledby="shop-title">
+          <div class="section-heading shop-heading">
+            <div><span class="eyebrow">THE PIECES WE LIVE FOR</span><h2 id="shop-title">Considered <em>comfort.</em></h2></div>
+            <div class="shop-controls">
+              <div class="filter-chips" aria-label="Filter by category">
+                <button class="filter-chip is-active" data-filter="All" type="button">All pieces</button>
+                <button class="filter-chip" data-filter="Living" type="button">Living</button>
+                <button class="filter-chip" data-filter="Dining" type="button">Dining</button>
+                <button class="filter-chip" data-filter="Bedroom" type="button">Bedroom</button>
+              </div>
+              <label class="sort-label">Sort <select id="sort-products" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label>
+            </div>
+          </div>
+          <p class="shop-result" id="shop-result" aria-live="polite"></p>
+          <div class="product-grid" id="product-grid"></div>
+          <div class="empty-state hidden" id="empty-products"><span>⌕</span><h3>No pieces found just yet.</h3><p>Try a different search or category.</p><button class="text-link" data-action="clear-search" type="button">Clear filters ↗</button></div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div class="footer-top"><a class="wordmark footer-mark" href="index.html">Furnique<span>Studio</span></a><p>Objects for the everyday.<br>Thoughtfully made, meant to stay.</p><div class="footer-social"><a href="contact.html" aria-label="Contact us">✉</a></div></div>
+        <div class="footer-links"><div><b>MAKE YOURSELF AT HOME</b><a href="shop.html">Shop all</a><a href="shop.html?category=Living">Living room</a><a href="shop.html?category=Dining">Dining room</a><a href="shop.html?category=Bedroom">Bedroom</a></div><div><b>EXPLORE THE STUDIO</b><a href="about.html">About</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a><a href="login.html">Customer sign in</a><a href="register.html">Create account</a></div><div class="footer-contact"><b>DROP US A LINE</b><a href="mailto:hello@furniquestudio.example">hello@furniquestudio.example</a><span>Mon–Sat, 10am–6pm IST</span><a class="admin-link" href="admin-login.html">Studio admin <span>↗</span></a></div></div>
+        <div class="footer-bottom"><span>© 2026 Furnique Studio. Demo collection.</span><span><a href="about.html">About</a><a href="contact.html">Contact</a><a href="index.html">Home</a></span><span>Thoughtful living, made simple.</span></div>
+      </footer>
+    </div>
+    <main id="admin-app" class="admin-app hidden"></main>
+    <div id="overlay-root"></div>
+    <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  </body>
+</html>
